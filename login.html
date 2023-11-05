@@ -17,29 +17,20 @@
     <header>
         <nav class="nav_header">
             <img class="logo" alt="logo" src="images/logo.png">
-            <a class="login" href="login.html"> <span>Login</span></a>
         </nav>
     </header>
     <main>
-        <div class="list_salon">
-            <h2 class="title">Salons</h2>
-            <ul class="ul_salon">
-                <li class="test_salon">
-                    <button class="but_salon">Salon 1</button>
-                </li>
-            </ul>
-        </div>
-        <div class="chat">
-            <h2 class="title">Chat</h2>
-            <input class="input" type="chat" placeholder="Envoyer un message">
-        </div>
-        <div class="online">
-            <h2 class="title">Online</h2>
-            <ul class="ul_online">
-                <li class="test_online">
-                    <button class="but_salon">User 1</button>
-                </li>
-            </ul>
-        </div>
+        <section id="login">
+		    <h2>Log in</h2>
+            <p class="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            <form class="input">
+                <label for="email">E-mail</label>
+                <input class="log-mail" type="email" name="username" required>
+                <label for="password">Mot de passe</label>
+                <input class="log-pass" type="password" name="password" required>
+                <input class="submit" type="submit" value="Se connecter">
+                <a class="forgot-pass">Mot de passe oublié</a>
+            </form>
+        </section>
     </main>
 </body>
