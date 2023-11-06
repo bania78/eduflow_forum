@@ -114,3 +114,15 @@ input[type="submit"] {
 	text-decoration: underline;
 	margin: auto;
 }
+
+.show {
+	display: block;
+}
+
+.show_flex {
+	display: flex;
+}
+
+.not_show {
+	display: none;
+}
