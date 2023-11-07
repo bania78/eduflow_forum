@@ -152,11 +152,11 @@ input[type="submit"] {
 .ul_salon {
     margin: 0;
     background-color: rgb(62, 91, 132);
-    border-bottom: 1px solid black;
 }
 
 .salon {
     padding: 10px;
+    border-bottom: 1px solid black;
 }
 
 button {
@@ -167,4 +167,39 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit
+}
+
+.pp {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.but_online {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.li_online {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-bottom: 1px solid black;
+    background-color: rgb(62, 91, 132);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-left: 15px;
 }
