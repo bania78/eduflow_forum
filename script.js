@@ -1,4 +1,6 @@
-async function getSalon(data)
+const sendButton = document.querySelector(".send");
+
+/*async function getSalon(data)
 {
     const apiUrl = '...';
     const response = await fetch(apiUrl);
@@ -82,3 +84,23 @@ logout.addEventListener("click", (e) => {
     sessionStorage.clear();
     location.reload();
 });
+*/
+
+sendButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const message = document.querySelector(".input_chat").value;
+    const hour = new Date();
+   // if (sessionStorage.getItem('log')) {
+        let li = document.createElement("li");
+        li.className = "message";
+        let p = document.createElement("p");
+        p.textContent = message;
+        let p_hour = document.createElement("p");
+        p_hour.className = "hour";
+        p_hour.textContent = hour.getHours()+"h"+hour.getMinutes()+" "+hour.getDate()+"/"+(hour.getMonth() + 1);
+        li.appendChild(p);
+        li.appendChild(p_hour);
+        const currentDiv = document.querySelector(".message_send");
+        currentDiv.appendChild(li);
+  //  }
+})
