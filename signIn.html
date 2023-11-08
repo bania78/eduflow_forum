@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Login Eduflow</title>
+    <title>SignIn Eduflow</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,18 +21,21 @@
     </header>
     <main>
         <section id="login">
-		    <h2>Log in</h2>
+		    <h2>Sign in</h2>
             <p class="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
             <form class="input">
+                <label for="prenom">Prenom</label>
+                <input class="signin-prenom" name="username" required>
+                <label for="prenom">Nom</label>
+                <input class="signin-prenom" name="username" required>
                 <label for="email">E-mail</label>
-                <input class="log-mail" type="email" name="username" required>
+                <input class="signin-mail" type="email" name="username" required>
                 <label for="password">Mot de passe</label>
-                <input class="log-pass" type="password" name="password" required>
-                <input class="submit" type="submit" value="Se connecter">
-                <a class="forgot-pass">Mot de passe oublié</a>
-                <a class="signin" href="signIn.html"> <span>Sign In</span></a>
+                <input class="signin-pass" type="password" name="password" required>
+                <label for="password">Confirmation du Mot de passe</label>
+                <input class="signin-pass" type="password" name="password" required>
+                <input class="submit" type="submit" value="S'inscrire">
             </form>
         </section>
     </main>
-    <script type="text/javascript" src="login.js"></script>
 </body>
