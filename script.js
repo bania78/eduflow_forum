@@ -52,7 +52,7 @@ function removeClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
-
+*/
 function addClass(element, name) {
     let arr1 = element.className.split(" ");
     let arr2 = name.split(" ");
@@ -62,7 +62,7 @@ function addClass(element, name) {
         }
     }
 }
-
+/*
 let online = document.getElementsByClassName("online");
 let not_online = document.getElementsByClassName("not_online");
 console.log(sessionStorage.getItem('log'));
@@ -90,7 +90,8 @@ sendButton.addEventListener("click", (e) => {
     e.preventDefault();
     const message = document.querySelector(".input_chat").value;
     const hour = new Date();
-   // if (sessionStorage.getItem('log')) {
+    const popup = document.querySelector(".dad_popup")
+    if (sessionStorage.getItem('log')) {
         let li = document.createElement("li");
         li.className = "message";
         let p = document.createElement("p");
@@ -102,5 +103,7 @@ sendButton.addEventListener("click", (e) => {
         li.appendChild(p_hour);
         const currentDiv = document.querySelector(".message_send");
         currentDiv.appendChild(li);
-  //  }
+    } else {
+        addClass(popup, "show_flex");
+    }
 })
